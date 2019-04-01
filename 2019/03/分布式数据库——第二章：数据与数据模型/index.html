@@ -117,7 +117,28 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image001.png">
 <meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image002.png">
-<meta property="og:updated_time" content="2019-03-29T14:51:32.476Z">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image003.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image004.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image005.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image006.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image007.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image008.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image009.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image010.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image011.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image012.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image013.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image014.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image015.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image016.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image017.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image018.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image019.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image020.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image021.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image022.png">
+<meta property="og:image" content="http://jkzhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image023.png">
+<meta property="og:updated_time" content="2019-04-01T03:29:51.383Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式数据库——第二章 数据与数据模型">
 <meta name="twitter:description" content="1.数据与数据模型 •数据  – 给定事实 •数据模型  – 抽象的, 自含的, 对象和操作符等的逻辑定义, 所有这些一起组成了抽象机 •实现  – 真实机器上的物理实现 •数据抽象 –实体与联系 实体（Entities） supplier, part, project, warehouse, employee …. 联系（Relationships） sp, sj, spj……. –特征 (Pr">
@@ -431,7 +452,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.5k 字
+                  2k 字
                 </span>
               
 
@@ -447,7 +468,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -746,6 +767,111 @@
 <p>declare c cursor for select * from EMP where city = ‘Parise’ for update</p>
 <p>修改当前游标元组</p>
 <p>update EMP set SAL = SAL + 100 where current of c</p>
+<ul>
+<li>关系代数</li>
+</ul>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image003.png" alt="clip_image003"></p>
+<ul>
+<li>关系代数的符号</li>
+</ul>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image004.png" alt="clip_image004"></p>
+<ul>
+<li><p>关系代数表达式</p>
+</li>
+<li><ul>
+<li>并</li>
+</ul>
+</li>
+</ul>
+<p>R∪S＝｛t∣t∈R∨t∈S｝</p>
+<p>–t是元组变量</p>
+<p>–R和S是关系代数表达式</p>
+<p>–R与S的degree必须相同</p>
+<p>–R与S的属性类型必须相同</p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image005.png" alt="clip_image005"></p>
+<ul>
+<li>交</li>
+</ul>
+<p>R∩S＝｛t∣t∈R∧t∈S｝</p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image006.png" alt="clip_image006"></p>
+<ul>
+<li>差</li>
+</ul>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image007.png" alt="clip_image007"></p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image008.png" alt="clip_image008"></p>
+<ul>
+<li>积</li>
+</ul>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image009.png" alt="clip_image009"></p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image010.png" alt="clip_image010"></p>
+<ul>
+<li>选择</li>
+</ul>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image011.png" alt="clip_image011"></p>
+<p>–水平划分关系</p>
+<p>–F是一个逻辑表达式，表示所选的元组应满足的条件</p>
+<p>–F由逻辑运算符┐(NOT)、∧(AND)、∨(OR)连接算术表达式构成</p>
+<p>•算术表达式<img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image012.png" alt="clip_image012">形为XθY，θ可以是&gt;,&lt;,=, ≤,≥或≠，X和Y可以是属性名、常量或简单函数</p>
+<ul>
+<li>投影</li>
+</ul>
+<p> <img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image013.png" alt="clip_image013"></p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image014.png" alt="clip_image014"></p>
+<ul>
+<li>自然联接</li>
+</ul>
+<p>设R的属性集为{X,Y}，S的属性集为{Y,Z}</p>
+<p>R∞S=t|t=&lt;X,Y,Z&gt;∧t[X,Y]∈R∧t[Y,Z]∈S}</p>
+<p>–相当于在R×S中选取R和S的所有公共属性值都相等的元组，并在结果中去掉重复属性</p>
+<p> <img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image015.png" alt="clip_image015"></p>
+<ul>
+<li>θ联接</li>
+</ul>
+<p> <img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image016.png" alt="clip_image016"></p>
+<p> <img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image017.png" alt="clip_image017"></p>
+<ul>
+<li>等值联接</li>
+</ul>
+<p>在θ联接中，当θ为等号时，称为“等值联接”</p>
+<p>等值联接是θ联接中比较常见的形式</p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image018.png" alt="clip_image018"></p>
+<ul>
+<li>关系代数封闭性</li>
+</ul>
+<p>任意关系代数操作的结果仍是一个关系</p>
+<p>关系代数的封闭性保证了关系代数操作的可嵌套性</p>
+<ul>
+<li>关系代数-删除</li>
+</ul>
+<p>例：“从数据库中删除姓名为‘Rose’的学生”</p>
+<p>Student←Student－σname=‘Rose’(Student)</p>
+<ul>
+<li>关系代数-插入</li>
+</ul>
+<p>例：插入一个新的学生</p>
+<p>S1←S1∪ { (‘001’,’Rose’,19) }</p>
+<ul>
+<li>关系代数-修改</li>
+</ul>
+<p>例：“将所有男学生的学号前加上字母M”</p>
+<p>Student←π‘M’||sno,name, sex, age(σsex=‘M’(Student)) ∪ (Student－σsex=‘M’(Student))</p>
+<ul>
+<li>关系代数-查询</li>
+</ul>
+<p>例：查询所有状态大于20的供应商的供应商号</p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image019.png" alt="clip_image019"></p>
+<p>​         查询供应了London城市中零件的供应商号</p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image020.png" alt="clip_image020"></p>
+<p>查询状态大于20并且没有零件的城市</p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image021.png" alt="clip_image021"></p>
+<ul>
+<li>关系代数与SQL</li>
+</ul>
+<p>例：</p>
+<p>供应商关系模式：S (S#, SNAME, STATUS, CITY)</p>
+<p>求住在同一个城市里的供应商号码对</p>
+<p> <img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image022.png" alt="clip_image022"></p>
+<p><img src="//JKZhang.github.io/2019/03/分布式数据库——第二章：数据与数据模型/clip_image023.png" alt="clip_image023"></p>
 
       
     </div>
