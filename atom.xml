@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKZhang.github.io/"/>
-  <updated>2019-05-02T14:34:18.383Z</updated>
+  <updated>2019-04-04T01:52:09.692Z</updated>
   <id>http://JKZhang.github.io/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKZhang.github.io/2019/05/java%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%8D%E4%B9%A0/"/>
-    <id>http://JKZhang.github.io/2019/05/java知识点复习/</id>
-    <published>2019-05-01T08:09:35.198Z</published>
-    <updated>2019-05-02T14:34:18.383Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>一、java基础</strong></p><p><strong>1.静态块的执行顺序</strong></p><p>静态块不管位置如何，总是在main()方法执行之前执行的。</p><p><strong>2.Java程序初始化的顺序</strong></p><p>初始化的顺序如下：父类静态变量、父类静态代码块、子类静态变量、子类静态代码块、父类非静态变量、父类非静态代码块、父类构造函数、子类非静态变量、子类非静态代码块、子类构造函数。</p><p><strong>3.成员变量前修饰符的作用域</strong></p><table><thead><tr><th>作用域与可见性</th><th>当前类</th><th>同一包</th><th>子类</th><th>其他包</th></tr></thead><tbody><tr><td>public</td><td>可见</td><td>可见</td><td>可见</td><td>可见</td></tr><tr><td>protected</td><td>可见</td><td>可见</td><td>可见</td><td>不可见</td></tr><tr><td>default</td><td>可见</td><td>可见</td><td>不可见</td><td>不可见</td></tr><tr><td>private</td><td>可见</td><td>不可见</td><td>不可见</td><td>不可见</td></tr></tbody></table><p><strong>4.一个Java文件中是否可以定义多个类</strong></p><p>一个java文件中可以定义多个类，但是最多只能有一个类被public修饰，并且这个类的类名与文件名必须相同，若这个文件中没有public的类，则文件名随便是一个类的名字即可。需要注意的是，当用javac指令编译这个.java文件时，它会给每一个类生成一个对应的.class文件。</p><p><strong>5.浅克隆与深克隆</strong></p><p>浅克隆：被克隆对象的所有变量都含有与原来对象相同的值，而所有对其他对象的引用仍然指向原来的对象。</p><p>深克隆：把克隆对象所引用的对象都克隆了一遍。</p><p><img src="//JKZhang.github.io/2019/05/java知识点复习/1556781665290.png" alt="1556781665290"></p><p><strong>6.java反射机制</strong></p><p>反射机制提供的功能主要有：得到一个对象所属的类；获取一个类的所有成员变量和方法；在运行时创建对象；在运行时调用对象的方法。</p><p><strong>7.java创建对象的四种方式</strong></p><p>（1）通过new语句实例化一个对象</p><p>（2）通过反射机制创建对象</p><p>（3）通过clone（）方法创建一个对象</p><p>（4）通过反序列化的方式创建对象</p><p><strong>8.值传递与引用传递</strong></p><p>方法调用的时候对基本数据类型如int，char,double等都是采用值传递（传递的是输入参数的复制）的方式执行，除此之外的其他类型都是按引用传递（传递的是对象的一个引用）的方式执行。在使用=赋值时也采用引用传递。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;一、java基础&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.静态块的执行顺序&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;静态块不管位置如何，总是在main()方法执行之前执行的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.Java程序初始化的顺序&lt;/strong&gt;&lt;
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>信息安全实战——重定向攻击</title>
