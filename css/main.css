@@ -1661,7 +1661,7 @@ pre .javascript .function {
   font-family: UKIJ Ekran;
 }
 .sidebar {
-  position: static;
+  position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
@@ -1928,7 +1928,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f65dff;
+  background: #26f488;
 }
 .links-of-blogroll {
   font-size: 13px;
