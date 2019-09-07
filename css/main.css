@@ -1664,7 +1664,7 @@ pre .javascript .function {
   position: fixed;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 100%;
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
@@ -1928,7 +1928,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #506594;
+  background: #607f9a;
 }
 .links-of-blogroll {
   font-size: 13px;
